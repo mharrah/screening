@@ -4,20 +4,20 @@ $sutPath = Join-Path "$PsScriptRoot\..\sut" $MyInvocation.MyCommand.Name.Replace
 
 Describe 'Advanced Funcs' {
     . $sutPath
-    Context 'Print-Stuff' {
-        It "Should Print Hi" {
-            Print-Stuff -Phrase 'hi' | Should Be "hi"
+    $filesPath = "$PsScriptRoot\..\files"
+    Context "Get-FullPath" {
+        $files = @(Get-ChildItem -Path $filesPath)
+        $fullPaths = @($files | Get-FullPath)
+        It "Should return same number of entries" {
+            $files.Count | Should Be $fullPaths.Count
         }
     }
-    Context 'Print-Stuff2' {
-        It "Should Print Hi" {
-            Print-Stuff2 @($null,'hi') | Should Be 'hi'
+    Context "Get-TextFileContent" {
+        It "Should return hi: 20" {
+            Get-TextFileContent -Path $filesPath | Should Be "hi: 20"
         }
-    }
-    Context "Print-PID" {
-        It "Should Print PID" {
-            $psProcesses = @(Get-Process -Name 'powershell')
-            Print-PID -Process $psProcesses[0] | Should Match 'Hi\s+\d+'
+        It "Should return null on missing file" {
+            Get-TextFileContent -Path $filesPath -FileName '21.txt' | Should Be $null
         }
     }
 }
