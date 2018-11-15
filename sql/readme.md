@@ -1,6 +1,6 @@
 ## SQL Challenge
 
-# Get as far as you can with these three exercises
+### Get as far as you can with these three exercises
 
  - Execute the DACPAC into your local dev SQL instance to create the SQLTest database *note: you can run it repeatedly but it will recreate the database each time*
    - include a screenshot of the published database
