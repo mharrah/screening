@@ -6,7 +6,7 @@
  - include a screenshot of the published database
 
 2. Write a SQL script to find the package and environment table combination with the most recent **date** and update the LastChange table's DateComplete using SQL:
-![alt text](desiredtable.png)
+[[desiredtable.png]]
  - include the script if completed
 
 3. Normalize the database
