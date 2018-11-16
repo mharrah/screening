@@ -12,7 +12,7 @@
     - **Include the script if completed**
 
 3.  Build the DACPAC into a *.dacpac file and use command-line sqlpackage to use the SQLTest.publish.xml file to publish to your local database
-    - **Include the *.dacpac file and the full command used in your cmd publish**
+    - **Include the dacpac file and the full command used in your cmd publish**
 	
 4.  What is wrong with the database design? Think through how it's laid out and send back either an idea of what could be done or even better, fix it!
     - **OPTION 1: Update the dacpac and send the dacpac back with your desired changes**
