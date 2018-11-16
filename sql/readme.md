@@ -1,6 +1,6 @@
 ## SQL Challenge
 
-### Get as far as you can with these three exercises
+### Get as far as you can with these four exercises
 
 1.  Setup a SQLTest database on your SQL instance and setup 3 tables with data in them in this instance using one of these two methods:
     - Execute the DACPAC into your local dev SQL instance to create the SQLTest database *note: you can run it repeatedly but it will recreate the database each time*
@@ -14,6 +14,7 @@
 3.  Build the DACPAC into a *.dacpac file and use command-line sqlpackage to use the SQLTest.publish.xml file to publish to your local database
     - **Include the *.dacpac file and the full command used in your cmd publish**
 	
-4.  Normalize the database
-    - **OPTION 1: Update the dacpac and send the dacpac back normalized**
-	- **OPTION 2: Update/add files to the tables and postdeploy folders and return the files in those folders**
+4.  What is wrong with the database design? Think through how it's laid out and send back either an idea of what could be done or even better, fix it!
+    - **OPTION 1: Update the dacpac and send the dacpac back with your desired changes**
+	- **OPTION 2: Update/add files to the tables and postdeploy folders and return the files in those folders with your desired changes**
+	- **OPTION 3: Just write back and say what you think would make the database better**
