@@ -7,7 +7,7 @@
 	- OPTION 2: Create the SQLTest database, then go to the "Tables" folder and execute each SQL to create the tables. Then go to the "PostDeploy" folder to insert the test data
     - **Include a screenshot of the completed database**
 	
-2.  Write a SQL script to find the package and environment table combination with the most recent **date** and update the LastChange table's DateComplete using SQL:
+2.  Using the **Deploys** and the **Requests** tables, write a SQL script to find the package and environment table combination with the most recent **DateComplete** and update the LastChange table's DateComplete using SQL:
     - ![LastChange Table Picture](desiredtable.png)
     - **Include the script if completed**
 
