@@ -1,4 +1,3 @@
-Some considerations:
 Requires:
 1. Powershell 5.1 (Windows)
 2. Pester 4.x+
